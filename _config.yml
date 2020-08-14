@@ -23,6 +23,11 @@ url: "https://modabyflora.com" # the base hostname & protocol for your site, e.g
 # Include the _pages folder
 include: ["_pages", "_data"]
 
+collections: 
+  products:
+       output: true
+       permalink: /:collection/:title/
+
 # Company Information
 company_name: Moda by Flora
 address_line: Quartier Attiegou Togo 2000, BP 8005, Lomé, Togo
@@ -47,10 +52,11 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
+  - node_modules
+  - dev-awesome-tool
 #   - Gemfile
 #   - Gemfile.lock
-#   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
