@@ -161,15 +161,11 @@ permalink: index.html
                 <span class="sr-only">(current)</span>
               </a>
             </li>
+            {% for category in site.data.categories %}
             <li class="nav-item">
-              <a class="nav-link" href="#">Robes</a>
+              <a class="nav-link" href="#">{{ category.name }}</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Chemises</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Grenouillères</a>
-            </li>
+            {% endfor %}
   
           </ul>
           <!-- Links -->
@@ -186,22 +182,22 @@ permalink: index.html
       <!--/.Navbar-->
   
       <!--Section: Products v.3-->
-      <section class="text-center mb-4">
+      <section class="text-center mb-4 shop-products">
   
         <!--Grid row-->
         <div class="row wow fadeIn">
           <!--Grid column-->
-          {% for item in site.data.products1 %}
+          {% for item in site.products %}
           <div class="col-lg-3 col-md-6 mb-4">
   
             <!--Card-->
             <div class="card">
   
               <!--Card image-->
-              <div class="view overlay">
-                <img src="{{ item.photos[0].url }}" class="card-img-top"
-                  alt="">
-                <a>
+              <div class="view overlay" style="max-height: 300px;">
+                <img src="{{ item.images[0] }}" class="card-img-top img-fluid"
+                  alt="Image {{ item.title }}">
+                <a href="{{ item.url }}">
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
@@ -210,14 +206,18 @@ permalink: index.html
               <!--Card content-->
               <div class="card-body text-center">
                 <!--Category & Title-->
-                <a href="" class="grey-text">
+                <a href="{{ item.url }}" class="grey-text">
                   <h5>{{ item.label }}</h5>
                 </a>
                 <h5>
                   <strong>
-                    <a href="" class="dark-grey-text">{{ item.title }}
+                    <a href="{{ item.url }}" class="dark-grey-text">{{ item.title }}
+                      {% if item.isnew == "True" %}
                       <span class="badge badge-pill danger-color">NEW</span>
+                      {% endif %}
+                      {% if item.isbestseller == "True" %}
                       <span class="badge badge-pill primary-color">bestseller</span>
+                      {% endif %}
                     </a>
                   </strong>
                 </h5>

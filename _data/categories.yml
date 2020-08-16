@@ -1,0 +1,9 @@
+- name: Robes
+  url: robes.html
+  slug: robes
+- name: Chemises
+  url: chemises.html
+  slug: chemises
+- name: Grenouillères
+  url: grenouilleres.html
+  slug: grenouilleres
