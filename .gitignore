@@ -3,3 +3,5 @@ _site
 .jekyll-metadata
 _site
 .DS_Store
+dev-awesome-tool/node_modules/
+dev-awesome-tool/build/
