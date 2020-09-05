@@ -188,7 +188,7 @@ permalink: index.html
         <div class="row wow fadeIn">
           <!--Grid column-->
           {% for item in site.products %}
-          <div class="col-lg-3 col-md-6 col-6 mb-4">
+          <div class="col-lg-4 col-md-6 col-6 mb-4">
   
             <!--Card-->
             <div class="card h-100">
@@ -204,12 +204,12 @@ permalink: index.html
               <!--Card image-->
   
               <!--Card content-->
-              <div class="card-body text-center">
+              <div class="card-body text-center row">
                 <!--Category & Title-->
-                <a href="{{ item.url }}" class="grey-text">
-                  <h5>{{ item.label }}</h5>
-                </a>
-                <h5>
+                <h5 class="col-lg-6 col-md-6 mt-auto mb-auto">
+                  <a href="{{ item.url }}" class="grey-text">
+                    <h5>{{ item.label }}</h5>
+                  </a>
                   <strong>
                     <a href="{{ item.url }}" class="dark-grey-text">{{ item.title }}
                       {% if item.isnew == "True" %}
@@ -222,9 +222,12 @@ permalink: index.html
                   </strong>
                 </h5>
   
-                <h4 class="font-weight-bold blue-text">
+                <h4 class="font-weight-bold blue-text col-lg-3  col-md-3 mt-auto mb-auto text-nowrap">
                   <strong>{{ item.price_numeric }}{{ item.currency }}</strong>
                 </h4>
+                <button class="btn btn-md my-0 px-0 waves-effect waves-light col-lg-2 col-md-2 mt-auto mb-auto" type="submit">
+                  <i class="fas fa-cart-plus"></i>
+                </button>
   
               </div>
               <!--Card content-->
