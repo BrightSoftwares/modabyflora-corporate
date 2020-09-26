@@ -54,7 +54,7 @@ function get_user_token(){
 }
 
 console.log("User is trying to connect to the path " + host_pathname);
-if(host_pathname == "/login/"){
+if(host_pathname == "/login/" || host_pathname == "/login" || host_pathname == "/login.html"){
     if(is_user_connected()){
         // If user is connected and is trying to connect
         console.log("User is already connected. Redirecting to the home page.");
