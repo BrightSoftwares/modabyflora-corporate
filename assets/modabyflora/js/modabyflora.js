@@ -14,7 +14,7 @@ if(host_origin === "http://localhost:4000")
     api_url_base = "http://localhost:8002";
 } else {
     // In production we use the same url base for the static html and the api
-    api_url_base = "";
+    api_url_base = "https://whatsappecommerce.herokuapp.com";
 }
 
 // Checks with the API if the user is connected
