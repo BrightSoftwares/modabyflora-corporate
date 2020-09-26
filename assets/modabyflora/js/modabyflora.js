@@ -1,6 +1,21 @@
 // Moda by FLora site javascript
 
-var api_url_base = "http://localhost:8002";
+// Redirect to home page if user tries to reach login but is already connected
+var host_pathname = window.location.pathname; // Returns path only (/path/example.html)
+var host_url      = window.location.href;     // Returns full URL (https://example.com/path/example.html)
+var host_origin   = window.location.origin;   // Returns base URL (https://example.com)
+
+//var api_url_base = "http://localhost:8002"; 
+var api_url_base = "";
+
+if(host_origin === "http://localhost:4000")
+{
+    // In dev mode, we have separated hosts for the static host and the api
+    api_url_base = "http://localhost:8002";
+} else {
+    // In production we use the same url base for the static html and the api
+    api_url_base = "";
+}
 
 // Checks with the API if the user is connected
 function is_user_connected(){
@@ -38,12 +53,8 @@ function get_user_token(){
     return window.localStorage.getItem("auth-token");
 }
 
-// Redirect to home page if user tries to reach login but is already connected
-var pathname = window.location.pathname; // Returns path only (/path/example.html)
-//var url      = window.location.href;     // Returns full URL (https://example.com/path/example.html)
-//var origin   = window.location.origin;   // Returns base URL (https://example.com)
-console.log("User is trying to connect to the path " + pathname);
-if(pathname == "/login/"){
+console.log("User is trying to connect to the path " + host_pathname);
+if(host_pathname == "/login/"){
     if(is_user_connected()){
         // If user is connected and is trying to connect
         console.log("User is already connected. Redirecting to the home page.");
