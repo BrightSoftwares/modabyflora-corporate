@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "558869668"
+product_id: "558869668"
 title: "Trousse cars transparente"
 description: "Très bon état"
 size: ""

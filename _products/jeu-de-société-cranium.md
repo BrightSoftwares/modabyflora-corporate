@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "568114550"
+product_id: "568114550"
 title: "Jeu  de société cranium"
 description: "Bon état général"
 size: "11-12 ans / 140-146 cm"

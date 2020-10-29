@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "570812541"
+product_id: "570812541"
 title: "Robe zara"
 description: "Excellent état Peu portée "
 size: "L / 40 / 12"

@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "570814195"
+product_id: "570814195"
 title: "Sac Desigual"
 description: "Bon état Juste le lien du sac cassé ne peut etre porté sur l'épaule. "
 size: ""

@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "557809106"
+product_id: "557809106"
 title: "Lot de 2 petites poupées"
 description: "Etat satisfaisant"
 size: "12-18 mois / 80-86 cm"

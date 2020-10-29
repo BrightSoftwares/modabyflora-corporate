@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "570125127"
+product_id: "570125127"
 title: "Cinquante nuances 3 tomes"
 description: "Très bon état"
 size: ""

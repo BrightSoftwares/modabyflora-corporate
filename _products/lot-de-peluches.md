@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "558852685"
+product_id: "558852685"
 title: "Lot de peluches"
 description: "Bon état"
 size: "Prématuré, jusqu'à 44cm"

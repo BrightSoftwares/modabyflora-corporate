@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "570121376"
+product_id: "570121376"
 title: "Livre nouveau papa"
 description: "Très bon etat juste la couverture du livre pliée. Voire photo"
 size: ""

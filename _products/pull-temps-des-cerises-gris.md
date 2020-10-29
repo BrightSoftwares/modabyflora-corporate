@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "559829463"
+product_id: "559829463"
 title: "Pull temps des cerises gris"
 description: "Excellent etat porte 2 fois Taille 8 ans"
 size: "8 ans / 122-128 cm"

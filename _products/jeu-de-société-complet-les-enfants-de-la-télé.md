@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "568111105"
+product_id: "568111105"
 title: "Jeu de société complet les enfants de la télé"
 description: "Excellent etat Aucune piece manquante"
 size: "12-13 ans / 146-152 cm"

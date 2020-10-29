@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
-id: "572413939"
+id: "1"
+product_id: "1"
 title: "Très jolie robe "
 description: "10 ans Orchestra Sera repassée avant l'envoi"
 size: "10 ans / 134-140 cm"

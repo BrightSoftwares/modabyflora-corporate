@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
-id: "571185406"
+id: "5"
+product_id: "5"
 title: "Boucle d'oreilles jaunes moutarde"
 description: "Excellent état"
 size: ""

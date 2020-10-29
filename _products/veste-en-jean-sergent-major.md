@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "558911678"
+product_id: "558911678"
 title: "Veste en jean sergent major"
 description: "Excellent état 6 ans"
 size: "6 ans / 110-116 cm"

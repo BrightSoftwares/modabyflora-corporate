@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "560074289"
+product_id: "560074289"
 title: "Tableau décoration"
 description: "Il s'illumine."
 size: ""

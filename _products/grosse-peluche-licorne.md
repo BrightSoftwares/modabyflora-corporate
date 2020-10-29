@@ -1,6 +1,7 @@
 ---
 layout: "product-page"
 id: "559839218"
+product_id: "559839218"
 title: "Grosse peluche licorne"
 description: "Excellent état"
 size: "Prématuré, jusqu'à 44cm"
