@@ -28,7 +28,7 @@ permalink: index.html
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Bienvenue chez Moda</strong>
+                <strong>Bienvenue chez Flora</strong>
               </h1>
   
               <p>
@@ -225,7 +225,8 @@ permalink: index.html
                 <h4 class="font-weight-bold blue-text col-lg-3  col-md-3 mt-auto mb-auto text-nowrap">
                   <strong>{{ item.price_numeric }}{{ item.currency }}</strong>
                 </h4>
-                <button class="btn btn-md my-0 px-0 waves-effect waves-light col-lg-2 col-md-2 mt-auto mb-auto" type="submit">
+                <button class="btn btn-md my-0 px-0 waves-effect waves-light col-lg-2 col-md-2 mt-auto mb-auto add-to-cart" type="submit" data-productid="{{ item.product_id }}">
+                  <span class="product-id" style="display: none;">{{ item.product_id }}</span>
                   <i class="fas fa-cart-plus"></i>
                 </button>
   
