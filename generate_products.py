@@ -25,6 +25,7 @@ for product in prds:
         f.writelines("---\n")
         f.writelines('layout: "product-page"\n')
         f.writelines('id: "{}"\n'.format(product['id']))
+        f.writelines('product_id: "{}"\n'.format(product['id']))
         f.writelines('title: "{}"\n'.format(product['title']))
         f.writelines('description: "{}"\n'.format(product['description'].replace("\n", " ")))
         f.writelines('size: "{}"\n'.format(product['size']))
