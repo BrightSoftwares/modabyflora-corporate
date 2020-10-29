@@ -199,7 +199,6 @@ $( document ).ready(function() {
         var token = get_user_token();
 
         $.ajax({
-    
             // The URL for the request
             url: `${api_url_base}/api/get-me/`,
 
@@ -234,15 +233,104 @@ $( document ).ready(function() {
         window.localStorage.removeItem("auth-token");
     }
 
+    function add_product_to_cart(){
+        // Load the token
+        var token = get_user_token();
+
+        var product_id = $(this).attr("data-productid");
+        console.log("Add a product to the cart " + product_id);
+
+        $.ajax({
+            // The URL for the request
+            url: `${api_url_base}/api/add-to-cart-byid/${product_id}/`,
+
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('Authorization', 'Token ' + token);
+            },
+            type: "POST",
+            dataType : "json",
+        })
+        .done(function( json ) {
+            console.log("Add to cart successful" + json);
+            
+        })
+        .fail(function( xhr, status, errorThrown ) {
+            console.log( "Sorry, there was a problem!" );
+            console.log( "Error: " + errorThrown );
+            console.log( "Status: " + status );
+            console.dir( xhr );
+        })
+        .always(function( xhr, status ) {
+            console.log( "The request is complete!" );
+        });
+    }
+
+    function fill_orders_table(){
+
+        if($('#orders-list').length > 0){
+            console.log("Found the orders list table. Filling it");
+            // Load the token
+            var token = get_user_token();
+            console.log("Token: " + token);
+            console.log("Pull the list of orders ");
+
+            $.ajax({
+                // The URL for the request
+                url: `${api_url_base}/api/orders/`,
+
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('Authorization', 'Token ' + token);
+                },
+                type: "GET",
+                dataType : "json",
+            })
+            .done(function( json ) {
+                console.log("Got the list of orders" + JSON.stringify(json));
+                var user_orders = json.results[0].items;
+                console.log("user_orders " + JSON.stringify(user_orders));
+                var current_order = undefined;
+
+                for (var i = 0; i < user_orders.length; i++){
+                    current_order = user_orders[i];
+                    $('#orders-list tr:last').after("<tr><th scope='row'><a class='text-primary'>"+ current_order.id +"</a></th><td>Call of Duty IV</td><td><span class='badge badge-success'>Shipped</span></td><td class='pt-2 pb-0'><canvas id='bar' width='40' height='40'></canvas></td></tr>");
+                }
+                
+                
+            })
+            .fail(function( xhr, status, errorThrown ) {
+                console.log( "Sorry, there was a problem!" );
+                console.log( "Error: " + errorThrown );
+                console.log( "Status: " + status );
+                console.dir( xhr );
+            })
+            .always(function( xhr, status ) {
+                console.log( "The request is complete!" );
+            });
+        } else {
+            console.log("Could not find the order list table");
+        }
+        
+        
+    }
+
+    function store_apidata_in_html(){
+        var divuser = $("#userapidata")[0];
+        var apidata = jQuery.data( divuser, "userdata");
+        console.log(apidata);
+        $("#cart-nb-elements").val(apidata.user.orders.length);
+    }
+
+    $("button.add-to-cart").click(add_product_to_cart);
+
     // Control the user's account
     display_navbar_userprofile();
+
+    // Fill the orders list table
+    fill_orders_table();
     
     // Submit the user login
     $("#defaultLoginForSubmit").click(signin);
     $("#navbar-userlogout").click(signout);
 
-    var divuser = $("#userapidata")[0];
-    var apidata = jQuery.data( divuser, "userdata");
-    console.log(apidata);
-    $("#cart-nb-elements").val(apidata.user.orders.length);
+    // store_apidata_in_html();
 });
