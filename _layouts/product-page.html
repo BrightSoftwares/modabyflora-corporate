@@ -2,23 +2,6 @@
 layout: default-page
 ---
 
-
-Let's place one here:
-
-<div id="one" style="height: 4em;"></div>
-
-Another here:
-
-<div id="two" style="height: 4em;"></div>
-
-<div id="three" style="float: right; height: 4em; margin: 0 0 0 1em; width: 4em;"></div>
-
-And four here
-
-<div id="four" style="height: 4em;"></div>
-
-Finished. Reac content here
-
 <!--Main layout-->
 <main class="mt-5 pt-4">
   <div class="container dark-grey-text mt-5">
@@ -96,7 +79,7 @@ Finished. Reac content here
 
           <div class="mb-3">
             <a href="">
-              <span class="badge purple mr-1">categorie:{{ page.category }}</span>
+              <span class="badge purple mr-1">{{ page.category }}</span>
             </a>
             {% if page.isnew == "True" %}
             <a href="">
@@ -187,7 +170,7 @@ Finished. Reac content here
   
               <!-- Card content -->
               <div class="card-body">
-                <p class="mb-1"><a href="" class="font-weight-bold black-text">{{ similar_product.title }}</a></p>
+                <p class="mb-1"><a href="{{ similar_product.url }}" class="font-weight-bold black-text">{{ similar_product.title }}</a></p>
                 <p class="mb-1">
                   {% if page.isdiscounted == "True" %}
                   <small class="mr-1"><s>{{ page.price_numeric }}{{ page.currency }}</s></small>
