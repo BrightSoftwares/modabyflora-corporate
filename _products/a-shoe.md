@@ -1,0 +1,20 @@
+---
+layout: "product-page"
+id: "5"
+product_id: "5"
+external_product_id: ""
+title: "A shoe"
+description: "A nice shoe"
+size: ""
+brand: ""
+label: "nice"
+price_numeric: "10.0"
+price_numeric_discounted: "9.0"
+currency: "€"
+user_updated_at_ts: ""
+category: "shoes"
+isdiscounted: "False"
+isnew: "True"
+isbestseller: "False"
+images: [ "http://whatsappecommerce.herokuapp.com/media/2020-07-20_17_01_17-Window.png" ]
+---

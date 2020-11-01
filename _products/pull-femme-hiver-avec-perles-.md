@@ -1,0 +1,20 @@
+---
+layout: "product-page"
+id: "108"
+product_id: "108"
+external_product_id: "647027317"
+title: "Pull femme hiver avec perles "
+description: "Porté quelques fois et en très bon état "
+size: ""
+brand: ""
+label: "vinted"
+price_numeric: "5.0"
+price_numeric_discounted: "5.0"
+currency: "€"
+user_updated_at_ts: ""
+category: "H&M"
+isdiscounted: "False"
+isnew: "True"
+isbestseller: "False"
+images: [ "https://images.vinted.net/thumbs/f800/01_00cc7_iT97FEMptEfJUF9XTaSFqLxF.jpeg?1602276693-55a8aead77e5a56401fdc27d9bc4185a257c73cc" ]
+---

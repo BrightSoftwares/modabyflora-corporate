@@ -1,0 +1,20 @@
+---
+layout: "product-page"
+id: "103"
+product_id: "103"
+external_product_id: "657183965"
+title: "Sublime robe degriffée fluide avec détails brillants "
+description: "Neuf jamais porté "
+size: ""
+brand: ""
+label: "vinted"
+price_numeric: "15.0"
+price_numeric_discounted: "15.0"
+currency: "€"
+user_updated_at_ts: ""
+category: "dégriffé"
+isdiscounted: "False"
+isnew: "True"
+isbestseller: "False"
+images: [ "https://images.vinted.net/thumbs/f800/01_0091e_Yh6xdU9aAaqieJfmp3AnHTdi.jpeg?1602926659-4be52c5267aa00a5fc1ac8a005083a6c0e90e6c6" ]
+---

@@ -1,0 +1,20 @@
+---
+layout: "product-page"
+id: "106"
+product_id: "106"
+external_product_id: "647030221"
+title: "Pull femme Pimkie "
+description: "Porté une fois "
+size: ""
+brand: ""
+label: "vinted"
+price_numeric: "5.0"
+price_numeric_discounted: "5.0"
+currency: "€"
+user_updated_at_ts: ""
+category: "Pimkie"
+isdiscounted: "False"
+isnew: "True"
+isbestseller: "False"
+images: [ "https://images.vinted.net/thumbs/f800/01_00f36_FzEkZFNkmbAkHgBCp2Anc5PQ.jpeg?1602276944-b5ea7e2689e47592c49ccca06623402a45d60699" ]
+---

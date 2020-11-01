@@ -1,0 +1,20 @@
+---
+layout: "product-page"
+id: "114"
+product_id: "114"
+external_product_id: "616467434"
+title: "Chaussures compensées "
+description: "Neuf avec étiquette "
+size: ""
+brand: ""
+label: "vinted"
+price_numeric: "20.0"
+price_numeric_discounted: "20.0"
+currency: "€"
+user_updated_at_ts: ""
+category: "Bata"
+isdiscounted: "False"
+isnew: "True"
+isbestseller: "False"
+images: [ "https://images.vinted.net/thumbs/f800/01_008e3_Sduqd18FurFRXa7Ws3EZU9zo.jpeg?1600592197-6307a2eeb64086f65eb2e6ea08246592c3ca1edb" ]
+---

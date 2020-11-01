@@ -1,0 +1,20 @@
+---
+layout: "product-page"
+id: "105"
+product_id: "105"
+external_product_id: "647032864"
+title: "Chemisier femme en jean t46"
+description: "Neuf avec étiquette "
+size: ""
+brand: ""
+label: "vinted"
+price_numeric: "10.0"
+price_numeric_discounted: "10.0"
+currency: "€"
+user_updated_at_ts: ""
+category: "La redoute"
+isdiscounted: "False"
+isnew: "True"
+isbestseller: "False"
+images: [ "https://images.vinted.net/thumbs/f800/01_01735_Gdf9xGVFyD9iTsxtTwTzu8i2.jpeg?1602277175-5179820f84f0263967fb9fb07796596cf7b4d975" ]
+---

@@ -1,0 +1,20 @@
+---
+layout: "product-page"
+id: "118"
+product_id: "118"
+external_product_id: "595053025"
+title: "Chemisier femme fluide rose"
+description: "Jamais porté juste lavé "
+size: ""
+brand: ""
+label: "vinted"
+price_numeric: "15.0"
+price_numeric_discounted: "15.0"
+currency: "€"
+user_updated_at_ts: ""
+category: "H&M"
+isdiscounted: "False"
+isnew: "True"
+isbestseller: "False"
+images: [ "https://images.vinted.net/thumbs/f800/01_00f19_MQJ2bE3oSGJbFWaqocApWiYq.jpeg?1598961393-f5e2f17ca0b289ac1a7030b880a9018fb01758d1" ]
+---

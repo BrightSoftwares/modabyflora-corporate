@@ -1,0 +1,20 @@
+---
+layout: "product-page"
+id: "111"
+product_id: "111"
+external_product_id: "616492786"
+title: "Superbes bottes noires "
+description: "Neuves dans sa boîte "
+size: ""
+brand: ""
+label: "vinted"
+price_numeric: "25.0"
+price_numeric_discounted: "25.0"
+currency: "€"
+user_updated_at_ts: ""
+category: "JustFab"
+isdiscounted: "False"
+isnew: "True"
+isbestseller: "False"
+images: [ "https://images.vinted.net/thumbs/f800/01_003ff_gjQWsaJF3vp686yqPyGThSnh.jpeg?1600592943-b3bc11603edb1e53f123948b20b90f9e9a059bac" ]
+---

@@ -1,0 +1,20 @@
+---
+layout: "product-page"
+id: "107"
+product_id: "107"
+external_product_id: "647028815"
+title: "Pull femme hiver Kiabi "
+description: "Porté quelques fois et en très bon état "
+size: ""
+brand: ""
+label: "vinted"
+price_numeric: "4.0"
+price_numeric_discounted: "4.0"
+currency: "€"
+user_updated_at_ts: ""
+category: "Kiabi"
+isdiscounted: "False"
+isnew: "True"
+isbestseller: "False"
+images: [ "https://images.vinted.net/thumbs/f800/01_01c3c_bX6wy9E2nmgkUP5mqk5F3UBo.jpeg?1602276820-1962db0788cd896d9d183be72d09b383d1ab3f9d" ]
+---

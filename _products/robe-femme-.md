@@ -1,0 +1,20 @@
+---
+layout: "product-page"
+id: "119"
+product_id: "119"
+external_product_id: "595043774"
+title: "Robe femme "
+description: "Neuf avec étiquette "
+size: ""
+brand: ""
+label: "vinted"
+price_numeric: "18.0"
+price_numeric_discounted: "18.0"
+currency: "€"
+user_updated_at_ts: ""
+category: "boohoo"
+isdiscounted: "False"
+isnew: "True"
+isbestseller: "False"
+images: [ "https://images.vinted.net/thumbs/f800/01_00eaa_iP8FhrdLJAi9tDMtdRAi23Db.jpeg?1598961026-b06f613d0a3ed9b757e93a9205c835b36920b04c" ]
+---

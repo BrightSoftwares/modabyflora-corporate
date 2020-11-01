@@ -1,0 +1,20 @@
+---
+layout: "product-page"
+id: "102"
+product_id: "102"
+external_product_id: "657189218"
+title: "Belle jupe mi longue "
+description: "Neuf avec étiquette "
+size: ""
+brand: ""
+label: "vinted"
+price_numeric: "15.0"
+price_numeric_discounted: "15.0"
+currency: "€"
+user_updated_at_ts: ""
+category: "Marks & Spencer"
+isdiscounted: "False"
+isnew: "True"
+isbestseller: "False"
+images: [ "https://images.vinted.net/thumbs/f800/01_019e9_sumF3jC6AQ8NysyV2P9ZTPyN.jpeg?1602926838-bcee278fbd8158ee6b3eeab056eaca782ac7bf47" ]
+---

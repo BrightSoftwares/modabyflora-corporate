@@ -1,0 +1,20 @@
+---
+layout: "product-page"
+id: "101"
+product_id: "101"
+external_product_id: "666703455"
+title: "Jean pantalon femme taille haute avec bouton "
+description: "Neuf avec étiquette "
+size: ""
+brand: ""
+label: "vinted"
+price_numeric: "20.0"
+price_numeric_discounted: "20.0"
+currency: "€"
+user_updated_at_ts: ""
+category: "C&A"
+isdiscounted: "False"
+isnew: "True"
+isbestseller: "False"
+images: [ "https://images.vinted.net/thumbs/f800/01_021d7_q3a7V2ZSnJgYTGJm3zM5ziVQ.jpeg?1603465574-28cded7b291c3cc836933a754bc53d5f109ba83a" ]
+---
