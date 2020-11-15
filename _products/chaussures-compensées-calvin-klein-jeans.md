@@ -18,3 +18,5 @@ isnew: "True"
 isbestseller: "False"
 images: [ "https://images.vinted.net/thumbs/f800/01_01630_DJtUcBRiCR3M14frt6myVJiH.jpeg?1600591826-b6bc9a158854f1dbbd5d4bbcd7464ef42fe59432" ]
 ---
+
+De jolies chaussures compensées.
