@@ -28,6 +28,10 @@ collections:
        output: true
        permalink: /:collection/:title/
 
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+
 # Company Information
 company_name: Moda by Flora
 address_line: Quartier Attiegou Togo 2000, BP 8005, Lomé, Togo
@@ -48,6 +52,7 @@ googleplus_link: http://plus.google.com
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
