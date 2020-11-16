@@ -2,10 +2,11 @@
 import re
 # import unidecode
 import json, os, urllib.request
+from slugify import slugify
 
-def slugify(text):
-    text = text.lower()
-    return re.sub(r'[\W_]+', '-', text)
+# def slugify(text):
+#     text = text.lower()
+#     return re.sub(r'[\W_]+', '-', text)
 
 
 
