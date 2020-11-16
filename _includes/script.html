@@ -7,10 +7,7 @@
   <script type="text/javascript" src="{{ "/assets/mdbootstrap/js/bootstrap.min.js" | prepend: site.baseurl | prepend: site.url }}"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="{{ "/assets/mdbootstrap/js/mdb.min.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-  <!-- React JS compenents -->
-  <script type="text/javascript" src="{{ "/assets/modabyflora/reactjs/runtime-main.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-  <script type="text/javascript" src="{{ "/assets/modabyflora/reactjs/chunk.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-  <script type="text/javascript" src="{{ "/assets/modabyflora/reactjs/main.chunk.js" | prepend: site.baseurl | prepend: site.url }}"></script>
+  
   <!-- Moda by FLora -->
   <!-- <script type="text/javascript" src="{{ "/assets/modabyflora/js/modabyflora.js" | prepend: site.baseurl | prepend: site.url }}"></script> -->
   <!-- Initializations -->
@@ -19,3 +16,8 @@
     new WOW().init();
 
   </script>
+  
+  <!-- React JS compenents -->
+  <script type="text/javascript" src="{{ "/assets/modabyflora/reactjs/chunk.js" | prepend: site.baseurl | prepend: site.url }}" defer></script>
+  <script type="text/javascript" src="{{ "/assets/modabyflora/reactjs/main.chunk.js" | prepend: site.baseurl | prepend: site.url }}" defer></script>
+  <script type="text/javascript" src="{{ "/assets/modabyflora/reactjs/runtime-main.js" | prepend: site.baseurl | prepend: site.url }}" defer></script>
