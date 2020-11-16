@@ -2,7 +2,7 @@ import React from 'react';
 
 import { userService, authenticationService } from '../services';
 
-class HomePage extends React.Component {
+class CheckoutPage extends React.Component {
     constructor(props) {
         super(props);
 
@@ -21,7 +21,7 @@ class HomePage extends React.Component {
         return (
             <div>
                 <h1>Hi {currentUser.firstName}!</h1>
-                <p>You're logged in with React & JWT!!</p>
+                <p>Checkout page !!! </p>
                 <h3>Users from secure api end point:</h3>
                 { users &&
                     <ul>
@@ -36,4 +36,4 @@ class HomePage extends React.Component {
     }
 }
 
-export { HomePage };
+export { CheckoutPage };

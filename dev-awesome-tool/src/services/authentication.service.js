@@ -2,7 +2,7 @@ import { BehaviorSubject } from 'rxjs';
 
 // import config from 'config';
 import { handleResponse } from '../helpers';
-import api_url from './apiurl';
+import {api_url} from './apiurl';
 
 const currentUserSubject = new BehaviorSubject(JSON.parse(localStorage.getItem('currentUser')));
 // const api_url = "http://localhost:8002"
@@ -20,6 +20,8 @@ function login(username, password) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
     };
+
+    console.log("Fecthing from url=" + JSON.stringify(api_url));
 
     return fetch(`${api_url}/api-token-auth/`, requestOptions)
         .then(handleResponse)

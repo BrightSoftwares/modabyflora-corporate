@@ -2,7 +2,7 @@ import React from 'react';
 
 import { userService, authenticationService } from '../services';
 
-class HomePage extends React.Component {
+class ShopPage extends React.Component {
     constructor(props) {
         super(props);
 
@@ -20,20 +20,11 @@ class HomePage extends React.Component {
         const { currentUser, users } = this.state;
         return (
             <div>
-                <h1>Hi {currentUser.firstName}!</h1>
-                <p>You're logged in with React & JWT!!</p>
-                <h3>Users from secure api end point:</h3>
-                { users &&
-                    <ul>
-                        {users.results.map(user =>
-                            <li key={user.id}>{user.title} {user.description}</li>
-                        )}
-                    </ul>
-                }
-
+                <h1>Shop page!</h1>
+                <p>Products displayed here </p>
             </div>
         );
     }
 }
 
-export { HomePage };
+export { ShopPage };

@@ -20,10 +20,14 @@ const Three = () => (
   <div style={{ height: "100%", backgroundColor: "#BC412B" }} />
 );
 
-ReactDOM.render(<One />, document.getElementById('four'));
-ReactDOM.render(<Two />, document.getElementById('two'));
-ReactDOM.render(<Three />, document.getElementById('three'));
-ReactDOM.render(<App />, document.getElementById('one'));
+document.addEventListener("DOMContentLoaded", function(event) {
+  console.log("Loading react components ...");
+  // ReactDOM.render(<One />, document.getElementById('four'));
+  // ReactDOM.render(<Two />, document.getElementById('two'));
+  // ReactDOM.render(<Three />, document.getElementById('three'));
+  ReactDOM.render(<App />, document.getElementById('one'));
+  console.log("... Done");
+});
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
