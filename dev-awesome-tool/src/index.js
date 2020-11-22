@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { App } from './App/App';
 import * as serviceWorker from './serviceWorker';
+import { LoginPage } from './LoginPage';
+import { CartPage } from './CartPage';
 // import { configureFakeBackend } from './helpers';
 
 // // Configure the fake backend for tests
@@ -22,9 +24,26 @@ const Three = () => (
 
 document.addEventListener("DOMContentLoaded", function(event) {
   console.log("Loading react components ...");
-  // ReactDOM.render(<One />, document.getElementById('four'));
-  // ReactDOM.render(<Two />, document.getElementById('two'));
-  // ReactDOM.render(<Three />, document.getElementById('three'));
+
+
+  // Load login element only if the page is found
+  var loginElement = document.getElementById("navbar-login-link");
+  if(typeof(loginElement) !== 'undefined' && loginElement !== null){
+    console.log("Found login element");
+    ReactDOM.render(<LoginPage />, loginElement);
+  } else{
+    console.log('Login element not found!');
+  }
+  
+  // Load cart element only if the page is found
+  var cartElement = document.getElementById("navbar-cart-link");
+  if(typeof(cartElement) !== 'undefined' && cartElement !== null){
+    console.log("Found cart element");
+    ReactDOM.render(<CartPage />, cartElement);
+  } else{
+    console.log('Cart element not found!');
+  }
+
   ReactDOM.render(<App />, document.getElementById('one'));
   console.log("... Done");
 });
