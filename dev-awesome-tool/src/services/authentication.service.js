@@ -21,8 +21,6 @@ function login(username, password) {
         body: JSON.stringify({ username, password })
     };
 
-    console.log("Fecthing from url=" + JSON.stringify(api_url));
-
     return fetch(`${api_url}/api-token-auth/`, requestOptions)
         .then(handleResponse)
         .then(user => {
@@ -38,4 +36,9 @@ function logout() {
     // remove user from local storage to log user out
     localStorage.removeItem('currentUser');
     currentUserSubject.next(null);
+}
+
+
+function isLoggedin() {
+    return !localStorage.getItem('currentUser');
 }
