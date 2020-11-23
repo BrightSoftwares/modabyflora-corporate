@@ -5,6 +5,7 @@ import { App } from './App/App';
 import * as serviceWorker from './serviceWorker';
 import { LoginPage } from './LoginPage';
 import { CartPage } from './CartPage';
+import { LoginButton } from './LoginButton';
 // import { configureFakeBackend } from './helpers';
 
 // // Configure the fake backend for tests
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var loginElement = document.getElementById("navbar-login-link");
   if(typeof(loginElement) !== 'undefined' && loginElement !== null){
     console.log("Found login element");
-    ReactDOM.render(<LoginPage />, loginElement);
+    ReactDOM.render(<LoginButton />, loginElement);
   } else{
     console.log('Login element not found!');
   }
