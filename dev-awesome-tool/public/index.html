@@ -25,13 +25,51 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="http://localhost:4000/assets/mdbootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="http://localhost:4000/assets/mdbootstrap/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="http://localhost:4000/assets/mdbootstrap/css/style.min.css" rel="stylesheet">
+    <style type="text/css">
+      html,
+      body,
+      header,
+      .carousel {
+        height: 60vh;
+      }
+
+      @media (max-width: 740px) {
+
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
+
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
+      }
+
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="one"></div>
-    <div id="navbar-login-link"></div>
-    <div id="two"></div>
-    <div id="three"></div>
+    <div className="container" id="one"></div>
+    <div className="container" id="navbar-login-link"></div>
+    <div className="container" id="login-form-container"></div>
+    <div className="container" id="user-account"></div>
+    <div className="container" id="user-orders"></div>
+    <div className="container" id="checkout-box"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -42,5 +80,24 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+      <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://localhost:4000/assets/mdbootstrap/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="http://localhost:4000/assets/mdbootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="http://localhost:4000/assets/mdbootstrap/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="http://localhost:4000/assets/mdbootstrap/js/mdb.min.js"></script>
+    
+    <!-- Moda by FLora -->
+    <!-- <script type="text/javascript" src="http://localhost:4000/assets/modabyflora/js/modabyflora.js"></script> -->
+    <!-- Initializations -->
+    <script type="text/javascript">
+      // Animations initialization
+      new WOW().init();
+
+    </script>
+    
   </body>
 </html>
