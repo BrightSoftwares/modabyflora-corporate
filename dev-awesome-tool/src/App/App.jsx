@@ -9,6 +9,7 @@ import { CheckoutPage } from '../CheckoutPage';
 import { ShopPage } from '../ShopPage';
 import { LoginPage } from '../LoginPage';
 import { CartPage } from '../CartPage';
+import { AccountPage } from '../AccountPage';
 
 class App extends React.Component {
     constructor(props) {
@@ -49,6 +50,7 @@ class App extends React.Component {
                                     <PrivateRoute exact path="/" component={HomePage} />
                                     <PrivateRoute exact path="/checkout" component={CheckoutPage} />
                                     <PrivateRoute exact path="/cart" component={CartPage} />
+                                    <PrivateRoute exact path="/account" component={AccountPage} />
                                     <Route path="/login" component={LoginPage} />
                                     <Route path="/shop" component={ShopPage} />
                                 </div>
