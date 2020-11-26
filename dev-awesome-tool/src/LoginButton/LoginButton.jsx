@@ -23,19 +23,22 @@ class LoginButton extends React.Component {
 
         if(currentUser){
             return(
-                <div className="nav-item avatar dropdown">
+                // <div className="nav-item avatar dropdown">
+                <React.Fragment>
                     <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false" style={{top: "-5px"}}>
                         <img src="https://mdbootstrap.com/img/Photos/Avatars/img (1).jpg" className="rounded-circle"
-                        alt="avatar image" style={{height: '35px'}}></img>
+                        alt="avatar image" style={{ height: '35px', paddingTop: '2px' }}></img>
                     </a>
                     <div className="dropdown-menu dropdown-menu-lg-right dropdown-dark"
                         aria-labelledby="navbarDropdownMenuLink-55">
                         <a className="dropdown-item" href="/account">Mon compte</a>
                         <a className="dropdown-item" href="/account">Mes commandes</a>
-                        <a onClick={authenticationService.logout} id="navbar-userlogout" class="dropdown-item">Se déconnecter</a>
+                        <a onClick={authenticationService.logout} id="navbar-userlogout" className="dropdown-item">Se déconnecter</a>
                     </div>
-                </div>
+                </React.Fragment>
+                    
+                // </div>
             )
         }
         else{
