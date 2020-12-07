@@ -8,12 +8,14 @@ class CheckoutPage extends React.Component {
 
         this.state = {
             currentUser: authenticationService.currentUserValue,
+            userprofile: null,
             users: null
         };
     }
 
     componentDidMount() {
         userService.getAll().then(users => this.setState({ users }));
+        userService.getUserProfile().then(userprofile => this.setState({ userprofile }));
     }
 
     render() {

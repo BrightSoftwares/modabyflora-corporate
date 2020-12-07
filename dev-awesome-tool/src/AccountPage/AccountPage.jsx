@@ -8,7 +8,8 @@ class AccountPage extends React.Component {
 
         this.state = {
             currentUser: authenticationService.currentUserValue,
-            orders: null
+            orders: null,
+            userprofile: null
         };
     }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import { userService, authenticationService } from '../services';
 
@@ -8,12 +8,14 @@ class OrdersPage extends React.Component {
 
         this.state = {
             currentUser: authenticationService.currentUserValue,
+            userprofile: null,
             orders: null
         };
     }
 
     componentDidMount() {
-        userService.getAll().then(orders => this.setState({ orders }));
+        //userService.getAll().then(orders => this.setState({ orders }));
+        userService.getUserProfile().then(userprofile => this.setState( { userprofile: userprofile.user, orders: userprofile.user.orders } ));
     }
 
     render() {
@@ -38,6 +40,23 @@ class OrdersPage extends React.Component {
                   </tr>
                 </thead>
                 <tbody>
+                  { orders &&
+                      orders.map((order) => 
+                        order.items.map((item) => 
+                        <Fragment>
+                        {
+                          <tr key={item.id}>
+                            <th scope="row"><a className="text-primary">{ item.id }</a></th>
+                            <td>{ item.quantity }</td>
+                            <td><span className="badge badge-success">Shipped</span></td>
+                            <td className="pt-2 pb-0"><canvas id="bar" width="40" height="40"></canvas></td>
+                          </tr>
+                        }
+                        </Fragment>
+                        )
+                      
+                      )
+                  }
                   <tr>
                     <th scope="row"><a className="text-primary">OR9842</a></th>
                     <td>Call of Duty IV</td>
